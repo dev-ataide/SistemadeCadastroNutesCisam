@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Registraion Form</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">Cadastro para solicitação do prontuário</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+          data-title="LGPD"
+        ></div>
+        <div class="progress-step" data-title="Dados Pessoais"></div>
+        <div class="progress-step" data-title="Residência"></div>
+        <div class="progress-step" data-title="Especialidade"></div>
+        <div class="progress-step" data-title="Documentação"></div>
+
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active"> 
+        <div class="input-group">
+            <label for="lgpd">Você concorda em fornecer seus dados pessoais ao CISAM de acordo com a Lei Geral de Proteção de dados (LGPD)?</label>
+            <select class="btn" name="concordaLgpd" id="lgpd">
+              <option value="">Selecione uma opção</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+      <div class="form-step DadosPessoais">
+        <div class="input-group">
+            <div class="input-group">
+                <label for="fullName">Nome Completo :</label>
+                <input type="text" name="nomeCompleto" id="nomeCompleto" />
+              </div>
+              <div class="input-group">
+                <label for="fullNameMother">Nome completo da mãe do(a) paciente :</label>
+                <input type="text" name="nomeCompletoMae" id="nomeCompletoMae" />
+            </div>
+              <div class="inputs-group">
+              <div class="input-group">
+                <label for="nomeSocial">Nome social do(a) paciente :</label>
+                <input type="text" name="nomeSocial" id="nomeSocial" />
+              </div>
+              <div class="input-group">
+                <label for="sexo">Sexo:</label>
+                <select class="btn" name="sexo" id="sexo">
+                  <option value="masculino">Masculino</option>
+                  <option value="feminino">Feminino</option>
+                </select>
+              </div>
+            </div>
+             
+                <div class="inputs-group">
+                    <div class="input-group">
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email" />
+                      </div>
+                      <div class="input-group">
+                        <label for="telefone">Telefone com DDD :</label>
+                        <input type="number" name="telefone" id="telefone" />
+                      </div>
+                  <div class="inputs">
+                      <label for="telefone">CPF :</label>
+                      <input type="number" name="cpf" id="cpf" />
+                  </div>
+                  <div class="inputs">
+                      <label for="RG">RG do (a) paciente :</label>
+                      <input type="number" name="rg" id="rg" />
+                  </div> 
+                   <div class="inputs">
+                      <label for="dataNascimento">Informe a data de seu nascimento :</label>
+                      <input type="date" name="dataNascimento" id="dataNascimento" />
+                  </div>
+                  <div class="inputs ">
+                    <label for="idadePaciente">Informe sua idade : </label>
+                    <input type="number" name="idadePaciente" id="idadePaciente" />
+              
+            
+            </div>  
+        </div> 
+        <div class="inputs margin-top25px">
+            <label for="dataMenstrua">Data da última menstruação (no caso de ciclo menstrual ativo) :</label>
+            <input type="date" name="dataMenstrua" id="dataMenstruacao" />
+        </div>
+    
+        <div class="input-group">
+            <label for="cicloMenstrual">Ciclo menstrual regular, irregular, ausente ou sangramento ativo após menopausa ?</label>
+            <select class="btn" type="text" name="cicloMenstrual"id="cicloMenstrual">
+                <option value="regular">Regular</option>
+                <option value="irregular">Irregular</option>
+                <option value="ausente">Ausente</option>
+                <option value="sangramento">Sangramento após menopausa</option>
+            </select>
+        </div>
+        </div>  
+              
+         
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Voltar</a>
+          <a href="#" class="btn btn-next">Avançar</a>
+        </div>
+      </div>
+    </div>
+      <div class="form-step Residência">
+        <div class="input-group">
+            <label for="cep">CEP da Residência do(a) paciente :</label>
+            <input type="number" name="cep" id="cep" />
+        </div>
+        <div class="inputs-group">
+          
+           
+            <div class="input-group">
+                <label for="estadoPaciente">Estado da Residência do(a) paciente:</label>
+                <input type="text" name="estadoPaciente" id="estadoPaciente" />
+            </div>
+            <div class="input-group">
+                <label for="bairroPaciente">Cidade da Residência do(a) paciente:</label>
+                <input type="text" name="cidadePaciente" id="cidadePaciente" />
+            </div>
+            <div class="input-group">
+                <label for="bairroPaciente">Bairro da Residência do(a) paciente:</label>
+                <input type="text" name="bairroPaciente" id="bairroPaciente" />
+            </div>
+            <div class="input-group">
+                <label for="ruaPaciente">Nome da Rua da Residência do(a) paciente:</label>
+                <input type="text" name="ruaPaciente" id="ruaPaciente" />
+            </div>
+            <div class="input-group">
+                <label for="numeroResidenciaPaciente">Número da Residência do(a) paciente:</label>
+                <input type="text" name="numeroResidenciaPaciente" id="numeroResidenciaPaciente" />
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="complementoResidenciaPaciente">Complemento da Residência do(a) paciente: (Casa, Número do apartamento, entre outras identificações):</label>
+            <input type="text" name="complementoResidenciaPaciente" id="complementoResidenciaPaciente" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Voltar</a>
+          <a href="#" class="btn btn-next">Avançar</a>
+        </div>
+      </div>
+      <div class="form-step Especialidade">
+        <div class="input-group">
+            <label for="Especialidade">Especialidade :</label>
+            <select class="btn" name="especialidade" id="especialidade">
+              <option value="cirurgiaGeralGinecologia">Cirurgia Geral em Ginecologia - Consulta Ambulatorial</option>
+              <option value="reversaoTubaria">Cirurgia para Reversão Tubári - Mulheres com ligação das trompas e desejam reverter</option>
+              <option value="climaterio">Climatério - Consulta Ambulatorial (Mulheres em menopausa)</option>
+              <option value="dentista"> Dentista do Cisam - Consulta Ambulatorial</option>
+              <option value=" "> Dentista da Faculdade de Odontologia da UPE - Consulta Ambulatorial </option>
+              <option value=" "> </option>
+              <option value=" "> </option>
+              <option value=" "> </option>
+              <option value=" "> </option>
+              <option value=" "> </option>
+              <option value=" "> </option>
+              <option value=" "> </option>
+              <option value=" "> </option>
+            </select>
+          </div>
+          <div class="btns-group">
+            <a href="#" class="btn btn-prev">Voltar</a>
+            <a href="#" class="btn btn-next">Avançar</a>
+          </div>
+      </div> 
+      <div class="form-step Upload">
+        <h1>1 - Foto da FRENTE e VERSO da Carteira de Identidade (RG) do (a) paciente (ou Foto da Certidão de Nascimento, se não possuir RG) do(a) paciente <br>
+          2 - Foto da FRENTE do Cadastro do CPF do(a) paciente <br>
+          3 - Foto do Comprovante de Residência ATUALIZADO (no máximo dos últimos três meses) do(a) paciente <br>
+          4 - Foto do da Carteira Nacional de Saúde (CNS) do(a) paciente <br>
+          5 - Foto do Documento de Encaminhamento para atendimento no CISAM assinado pelo profissional de saúde <br>
+          6 - Indicação de profissional de saúde para consulta ou exame no CISAM <br>
+          <br>
+          Assim que for criado o prontuário no CISAM, você receberá o número de registro por e-mail e poderá solicitar uma consulta no CISAM <br>
+          
+          Não temos uma previsão de resposta, pois as filas de espera são longas.</h1>
+        <div class="inputs-group">
+            <form>
+                <div class="input-group">
+                  <label id="labelArquivosUpload" for="arquivosUpload">Anexe os documentos solicitados :</label>
+                  <i class="bi bi-folder-plus"></i>
+                  <input class="btn" type="file" name="arquivosUpload" id="arquivosUpload" accept=".pdf, image/jpeg, image/png" multiple>
+                </div>
+            </form>              
+    </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Voltar</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
